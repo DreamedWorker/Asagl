@@ -10,6 +10,7 @@
 		5D037B562DE31889001C8AA8 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5D037B552DE31889001C8AA8 /* Kingfisher */; };
 		5D037B5A2DE3197B001C8AA8 /* GameKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5D037B592DE3197B001C8AA8 /* GameKit */; };
 		5D622B0E2DE2FD47006748C9 /* WineKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5D622B0D2DE2FD47006748C9 /* WineKit */; };
+		5DCE7BFC2DE44CE900D56823 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 5DCE7BFB2DE44CE900D56823 /* Sparkle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		5D622B0B2DE2FCB6006748C9 /* Exceptions for "Asagl" folder in "Asagl" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Info.plist,
 				Packages/GameKit,
 				Packages/WineKit,
 			);
@@ -44,6 +46,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D037B5A2DE3197B001C8AA8 /* GameKit in Frameworks */,
+				5DCE7BFC2DE44CE900D56823 /* Sparkle in Frameworks */,
 				5D037B562DE31889001C8AA8 /* Kingfisher in Frameworks */,
 				5D622B0E2DE2FD47006748C9 /* WineKit in Frameworks */,
 			);
@@ -91,6 +94,7 @@
 				5D622B0D2DE2FD47006748C9 /* WineKit */,
 				5D037B552DE31889001C8AA8 /* Kingfisher */,
 				5D037B592DE3197B001C8AA8 /* GameKit */,
+				5DCE7BFB2DE44CE900D56823 /* Sparkle */,
 			);
 			productName = Asagl;
 			productReference = 5D622AD72DE2F4E5006748C9 /* Asagl.app */;
@@ -124,6 +128,7 @@
 				5D622B0C2DE2FD47006748C9 /* XCLocalSwiftPackageReference "Asagl/Packages/WineKit" */,
 				5D037B542DE31889001C8AA8 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				5D037B582DE3197B001C8AA8 /* XCLocalSwiftPackageReference "Asagl/Packages/GameKit" */,
+				5DCE7BFA2DE44CE900D56823 /* XCRemoteSwiftPackageReference "Sparkle" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5D622AD82DE2F4E5006748C9 /* Products */;
@@ -292,6 +297,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Asagl/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Asagl;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © Yuan Shine 2025-present, all rights reserved.";
@@ -324,6 +330,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Asagl/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Asagl;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © Yuan Shine 2025-present, all rights reserved.";
@@ -385,6 +392,14 @@
 				minimumVersion = 8.3.2;
 			};
 		};
+		5DCE7BFA2DE44CE900D56823 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -400,6 +415,11 @@
 		5D622B0D2DE2FD47006748C9 /* WineKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = WineKit;
+		};
+		5DCE7BFB2DE44CE900D56823 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DCE7BFA2DE44CE900D56823 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

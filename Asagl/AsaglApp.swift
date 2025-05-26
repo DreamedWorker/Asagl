@@ -6,11 +6,19 @@
 //
 
 import SwiftUI
+import Sparkle
 
 @main
 struct AsaglApp: App {
     @NSApplicationDelegateAdaptor(AsaglAppDelegate.self) private var delegate
     @StateObject private var svm = SharedViewModel.shared
+    private let updaterController: SPUStandardUpdaterController
+    
+    init() {
+        // If you want to start the updater manually, pass false to startingUpdater and call .startUpdater() later
+        // This is where you can also pass an updater delegate if you need one
+        updaterController = SPUStandardUpdaterController(startingUpdater: true, updaterDelegate: nil, userDriverDelegate: nil)
+    }
     
     var body: some Scene {
         WindowGroup {
@@ -24,6 +32,9 @@ struct AsaglApp: App {
         .windowResizability(.contentSize)
         .commands(content: {
             CommandGroup(replacing: .newItem, addition: {})
+            CommandGroup(after: .appInfo) {
+                CheckForUpdatesView(updater: updaterController.updater)
+            }
         })
     }
 }
