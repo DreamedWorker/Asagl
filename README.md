@@ -38,12 +38,12 @@ The development of this software cannot be separated from the support of the fol
 
 ## Attentions
 
-** Due to legal and compliance considerations, some technical implementations of this software cannot and should not be made public. Please understand. **
+<b> Due to legal and compliance considerations, some technical implementations of this software cannot and should not be made public. Please understand. </b>
 
-** 本软件系非营利性质的开放源代码软件，以学习计算机软件开发为目的编写，请在下载学习使用的24小时之内完全删除，否则由此产生的任何后果均与开发者无关。本软件不含任何担保，你的下载、安装、使用的行为均系自愿行为，开发者不对你的上述任何行为负担任何责任！ **
+<b> 本软件系非营利性质的开放源代码软件，以学习计算机软件开发为目的编写，请在下载学习使用的24小时之内完全删除，否则由此产生的任何后果均与开发者无关。本软件不含任何担保，你的下载、安装、使用的行为均系自愿行为，开发者不对你的上述任何行为负担任何责任！ </b>
 
-** This software is a non-profit open source software written for the purpose of learning computer software development. Please delete it completely within 24 hours of downloading and learning, otherwise any consequences have nothing to do with the developer. This software does not contain any guarantee. Your download, installation and use are all voluntary acts, and the developer shall not bear any responsibility for any of your above behaviors! **
+<b> This software is a non-profit open source software written for the purpose of learning computer software development. Please delete it completely within 24 hours of downloading and learning, otherwise any consequences have nothing to do with the developer. This software does not contain any guarantee. Your download, installation and use are all voluntary acts, and the developer shall not bear any responsibility for any of your above behaviors! </b>
 
-If you know that this software is a brand-new project, the developer directly used the code generated in the previous development of `Yahgs` when developing this software, but `Yahgs` is no longer visible, and its OTA service is no longer available. Please migrate to the new project in time. This project has nothing to do with aiwentongxue.
+If you know that this software is a brand-new project, the developer directly used the code generated in the previous development of `Yahgs` when developing this software, but `Yahgs` is no longer visible, and its OTA service is no longer available. Please migrate to the new project in time. <b>This project has nothing to do with aiwentongxue.</b>
 
 ## Have fun!
