@@ -1,0 +1,37 @@
+//
+//  LauncherNewsRepo.swift
+//  Asagl
+//
+//  Created by Yuan Shine on 2025/5/10.
+//
+
+import Foundation
+import GameKit
+
+class LauncherNewsRepo: DailyStorage {
+    let WEBSTATIC_GENSHIN_NEWS = "https://hyp-api.mihoyo.com/hyp/hyp-connect/api/getGameContent?launcher_id=jGHBHlcOq1&language=zh_CN&game_id=1Z8W5NHUQb"
+    let WEBSTATIC_ZENLESS_NEWS = "https://hyp-api.mihoyo.com/hyp/hyp-connect/api/getGameContent?launcher_id=jGHBHlcOq1&language=zh_CN&game_id=x6znKlJ0xK"
+    private let gameType: GameKit.GameType
+    
+    init(configKey: String, type: GameKit.GameType) {
+        self.gameType = type
+        super.init(lastFetchDateKey: configKey)
+    }
+    
+    func fetchFromNetwork() async throws -> LauncherNews {
+        let data = try await AsaglEndpoint.simpleGET(url: (gameType == .GenshinCN) ? WEBSTATIC_GENSHIN_NEWS : WEBSTATIC_ZENLESS_NEWS)
+        FileHelper.writeData(data: data, url: Paths.path(front: Paths.resourceDir.toPath(), relative: "\(gameType.rawValue)_news.json"))
+        let formattedOne = try JSONDecoder().decode(LauncherNews.self, from: data)
+        storeFetch(date: Date())
+        return formattedOne
+    }
+    
+    func fetchFromDisk() -> LauncherNews? {
+        let formattedOne = try? JSONDecoder()
+            .decode(
+                LauncherNews.self,
+                from: Data(contentsOf: Paths.path(front: Paths.resourceDir.toPath(), relative: "\(gameType.rawValue)_news.json"))
+            )
+        return formattedOne
+    }
+}
