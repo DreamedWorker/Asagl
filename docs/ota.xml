@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Asagl 更新日志</title>
+    <description>Most recent changes with links to updates.</description>
+    <language>zh</language>
+        <item>
+        <title>Version 0.0.3</title>
+        <sparkle:version>4</sparkle:version>
+        <sparkle:shortVersionString>0.0.3</sparkle:shortVersionString>
+        <link>https://github.com/DreamedWorker/Asagl</link>
+        <sparkle:fullReleaseNotesLink>releasenotes.html</sparkle:fullReleaseNotesLink>
+        <description>
+          <![CDATA[
+            <ul>
+              <li>【新增】游戏版本更新进入测试阶段</li>
+              <li>【优化】调整了应用的代码架构</li>
+              <li>【修复】修复了一些已知的问题</li>
+            </ul>
+          ]]>
+        </description>
+        <pubDate>2025年6月5日 周四 09:00</pubDate>
+        <enclosure url="https://github.com/DreamedWorker/Asagl/releases/download/v0.0.3/Asagl-v0.0.3-arm64.tar.xz" length="7994640" type="application/octet-stream" sparkle:edSignature="imkDKRvVQMFlauz3VdfHeR/IT69DpKHfBR6uZWuS1n9nfVkynvG/DzHBnqM9l9emW9H+mDPPjl+isscjZatoBw==" />
+        </item>
+  </channel>
+</rss>

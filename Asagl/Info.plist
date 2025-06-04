@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SUFeedURL</key>
+	<string>https://dreamedworker.github.io/Asagl/ota.xml</string>
+	<key>SUPublicEDKey</key>
+	<string>g1QD6Xv96/YXVD95+l/sY50Lzh3Vikd2Nx0xJyMrRbI=</string>
+</dict>
+</plist>
