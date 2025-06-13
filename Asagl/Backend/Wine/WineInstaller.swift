@@ -1,13 +1,13 @@
 //
-//  WineInstall.swift
-//  WineKit
+//  WineInstaller.swift
+//  Asagl
 //
-//  Created by Yuan Shine on 2025/5/25.
+//  Created by 微晞鸢徊 on 2025/6/13.
 //
 
 import Foundation
 
-class WineInstall {
+class WineInstaller {
     static let REG_MAC_DRIVER = #"HKCU\Software\Wine\Mac Driver"#
     private static let tar = URL(fileURLWithPath: "/usr/bin/tar")
     
@@ -44,3 +44,4 @@ class WineInstall {
         }
     }
 }
+

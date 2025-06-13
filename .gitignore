@@ -65,5 +65,4 @@ fastlane/screenshots/**/*.png
 fastlane/test_output
 
 # For compliance reasons, some content will not be submitted.
-Asagl/Packages/GameKit/
-/Asagl/Packages/GameKit
+/Asagl/Backend/Game

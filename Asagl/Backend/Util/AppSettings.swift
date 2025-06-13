@@ -2,7 +2,7 @@
 //  AppSettings.swift
 //  Asagl
 //
-//  Created by Yuan Shine on 2025/5/8.
+//  Created by 微晞鸢徊 on 2025/6/13.
 //
 
 import Foundation

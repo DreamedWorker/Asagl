@@ -1,8 +1,8 @@
 //
 //  AlertMate.swift
-//  TravellersBag
+//  Asagl
 //
-//  Created by 鸳汐 on 2024/11/1.
+//  Created by 微晞鸢徊 on 2025/6/13.
 //
 
 import Foundation

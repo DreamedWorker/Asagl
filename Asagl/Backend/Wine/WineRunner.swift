@@ -1,15 +1,15 @@
 //
 //  WineRunner.swift
-//  GenshinInstaller
+//  Asagl
 //
-//  Created by Yuan Shine on 2025/4/28.
+//  Created by 微晞鸢徊 on 2025/6/13.
 //
 
 import Foundation
 
 class WineRunner {
-    private static let wine = Paths.wineDir.appending(component: "wine").appending(component: "bin").appending(path: "wine")
-    private static let environmentVar: [String : String] = ["WINEPREFIX": Paths.prefixDir.toPath()]
+    private static let wine = LocalPaths.wineDir.appending(component: "wine").appending(component: "bin").appending(path: "wine")
+    private static let environmentVar: [String : String] = ["WINEPREFIX": LocalPaths.prefixDir.toPath()]
     
     static func makeWineUsable() throws -> Int {
         let runResult = try runWineCmd(args: ["wineboot", "-u"])
@@ -96,11 +96,12 @@ extension WineRunner {
 extension WineRunner {
     public static func isUsingRetinaMode() throws -> Bool {
         let values = ["y", "n"]
-        guard let result = try runWineReg(key: WineInstall.REG_MAC_DRIVER, name: "RetinaMode", type: .string),
+        guard let result = try runWineReg(key: WineInstaller.REG_MAC_DRIVER, name: "RetinaMode", type: .string),
               values.contains(result) else {
-            try changeRegValues(key: WineInstall.REG_MAC_DRIVER, name: "RetinaMode", data: "n", type: .string)
+            try changeRegValues(key: WineInstaller.REG_MAC_DRIVER, name: "RetinaMode", data: "n", type: .string)
             return false
         }
         return result == "y"
     }
 }
+

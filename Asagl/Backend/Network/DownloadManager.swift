@@ -20,9 +20,15 @@ class DownloadManager {
     
     func startDownload(
         url: String,
-        finished: @escaping (URL) -> Void
+        finished: @escaping (URL) -> Void,
+        sendError: @escaping (String) -> Void
     ) {
-        downloadTask = session.downloadTask(with: URL(string: url)!) { objectURL, _, _ in
+        downloadTask = session.downloadTask(with: URL(string: url)!) { objectURL, _, error in
+            if let error = error {
+                sendError(error.localizedDescription)
+                return
+            }
+            
             DispatchQueue.global(qos: .background).async {
                 if let confirmedURL = objectURL {
                     finished(confirmedURL)

@@ -7,6 +7,12 @@
 
 import Foundation
 
+extension URL {
+    func toPath() -> String {
+        return self.path(percentEncoded: false)
+    }
+}
+
 class FileHelper {
     /// 检查文件是否存在
     static func checkExists(file: URL) -> Bool {
@@ -18,27 +24,6 @@ class FileHelper {
         let fm = FileManager.default
         if !checkExists(file: dir) {
             try fm.createDirectory(at: dir, withIntermediateDirectories: true)
-        }
-    }
-    
-    /// 从应用内复制文件 如果文件存在则会删除之前的文件
-    static func copyBundleFile2Disk(name: String, extensionName: String? = nil, needPermission: Bool = false) throws {
-        // 获取其在应用内的路径
-        guard let executableURL = Bundle.main.url(forResource: name, withExtension: extensionName) else {
-            throw NSError()
-        }
-        let fileManager = FileManager.default
-        // 开始复制
-        let destinationURL = Paths.resourceDir.appending(path: executableURL.lastPathComponent)
-        if fileManager.fileExists(atPath: destinationURL.toPath()) {
-            try fileManager.removeItem(at: destinationURL)
-        }
-        try fileManager.copyItem(at: executableURL, to: destinationURL)
-        if needPermission {
-            // 设置可执行权限
-            try fileManager.setAttributes([.posixPermissions: 0o755], ofItemAtPath: destinationURL.toPath())
-            // 移除参数
-            try removeQuarantine(path: destinationURL.toPath())
         }
     }
     
@@ -68,13 +53,5 @@ class FileHelper {
             print("Error running command: \(error)")
         }
         return nil
-    }
-    
-    private static func removeQuarantine(path: String) throws {
-        let process = Process()
-        process.executableURL = URL(fileURLWithPath: "/usr/bin/xattr")
-        process.arguments = ["-s", "-r", "-d", "com.apple.quarantine", path]
-        try process.run()
-        process.waitUntilExit()
     }
 }

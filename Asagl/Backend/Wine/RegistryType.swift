@@ -1,9 +1,11 @@
 //
 //  RegistryType.swift
-//  GenshinInstaller
+//  Asagl
 //
-//  Created by Yuan Shine on 2025/4/28.
+//  Created by 微晞鸢徊 on 2025/6/13.
 //
+
+import Foundation
 
 enum RegistryType: String {
     case binary = "REG_BINARY"

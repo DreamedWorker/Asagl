@@ -2,32 +2,39 @@
 //  ContentView.swift
 //  Asagl
 //
-//  Created by Yuan Shine on 2025/6/4.
+//  Created by 微晞鸢徊 on 2025/6/13.
 //
 
 import SwiftUI
 
 struct ContentView: View {
-    @Environment(\.dismiss) private var dismiss
-    @AppStorage("firstOpenedVersion") private var lastVersion: String = ""
+    @AppStorage(AppConfigKey.APP_FIRST_OPEN_VERSION) private var lastVersion: String = ""
     @State private var showUpdateSheet = false
     
     var body: some View {
-        HomeView()
-            .onAppear {
-                if lastVersion != "0.0.3" {
-                    showUpdateSheet = true
+        VStack {
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundStyle(.tint)
+            Text("Hello, world!")
+        }
+        .padding()
+        .onAppear {
+            if lastVersion != "1.0.0" {
+                showUpdateSheet = true
+            }
+        }
+        .onChange(of: lastVersion, { _, newOne in
+            showUpdateSheet = newOne != "1.0.0"
+        })
+        .sheet(isPresented: $showUpdateSheet) {
+            WizardView(
+                refreshVersion: {
+                    lastVersion = "1.0.0"
                 }
-            }
-            .onChange(of: lastVersion, { _, newOne in
-                showUpdateSheet = newOne != "0.0.3"
-            })
-            .sheet(isPresented: $showUpdateSheet) {
-                WizardScreen(refreshVersion: {
-                    lastVersion = "0.0.3"
-                })
-                .interactiveDismissDisabled(true)
-            }
+            )
+            .interactiveDismissDisabled(true)
+        }
     }
 }
 

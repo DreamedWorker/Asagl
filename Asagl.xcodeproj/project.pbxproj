@@ -7,31 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D01FCA72DF0218200DE05B4 /* GameKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5D01FCA62DF0218200DE05B4 /* GameKit */; };
-		5D037B562DE31889001C8AA8 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5D037B552DE31889001C8AA8 /* Kingfisher */; };
-		5DCE7BFC2DE44CE900D56823 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 5DCE7BFB2DE44CE900D56823 /* Sparkle */; };
+		5DF58ED42DFC3D9200B65AD1 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 5DF58ED32DFC3D9200B65AD1 /* Sparkle */; };
+		5DF58ED72DFC3DB700B65AD1 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 5DF58ED62DFC3DB700B65AD1 /* SwiftProtobuf */; };
+		5DF58ED92DFC3DB700B65AD1 /* SwiftProtobufPluginLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 5DF58ED82DFC3DB700B65AD1 /* SwiftProtobufPluginLibrary */; };
+		5DF58EDC2DFC3E2300B65AD1 /* SwiftZSTD in Frameworks */ = {isa = PBXBuildFile; productRef = 5DF58EDB2DFC3E2300B65AD1 /* SwiftZSTD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5D622AD72DE2F4E5006748C9 /* Asagl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asagl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DF58EC12DFC39BB00B65AD1 /* Asagl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asagl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		5D622B0B2DE2FCB6006748C9 /* Exceptions for "Asagl" folder in "Asagl" target */ = {
+		5DF58ED12DFC3AFF00B65AD1 /* Exceptions for "Asagl" folder in "Asagl" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
-				Packages/GameKit,
 			);
-			target = 5D622AD62DE2F4E5006748C9 /* Asagl */;
+			target = 5DF58EC02DFC39BB00B65AD1 /* Asagl */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		5D622AD92DE2F4E5006748C9 /* Asagl */ = {
+		5DF58EC32DFC39BB00B65AD1 /* Asagl */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				5D622B0B2DE2FCB6006748C9 /* Exceptions for "Asagl" folder in "Asagl" target */,
+				5DF58ED12DFC3AFF00B65AD1 /* Exceptions for "Asagl" folder in "Asagl" target */,
 			);
 			path = Asagl;
 			sourceTree = "<group>";
@@ -39,31 +39,32 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5D622AD42DE2F4E5006748C9 /* Frameworks */ = {
+		5DF58EBE2DFC39BB00B65AD1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D01FCA72DF0218200DE05B4 /* GameKit in Frameworks */,
-				5DCE7BFC2DE44CE900D56823 /* Sparkle in Frameworks */,
-				5D037B562DE31889001C8AA8 /* Kingfisher in Frameworks */,
+				5DF58ED92DFC3DB700B65AD1 /* SwiftProtobufPluginLibrary in Frameworks */,
+				5DF58ED42DFC3D9200B65AD1 /* Sparkle in Frameworks */,
+				5DF58ED72DFC3DB700B65AD1 /* SwiftProtobuf in Frameworks */,
+				5DF58EDC2DFC3E2300B65AD1 /* SwiftZSTD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5D622ACE2DE2F4E5006748C9 = {
+		5DF58EB82DFC39BB00B65AD1 = {
 			isa = PBXGroup;
 			children = (
-				5D622AD92DE2F4E5006748C9 /* Asagl */,
-				5D622AD82DE2F4E5006748C9 /* Products */,
+				5DF58EC32DFC39BB00B65AD1 /* Asagl */,
+				5DF58EC22DFC39BB00B65AD1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5D622AD82DE2F4E5006748C9 /* Products */ = {
+		5DF58EC22DFC39BB00B65AD1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5D622AD72DE2F4E5006748C9 /* Asagl.app */,
+				5DF58EC12DFC39BB00B65AD1 /* Asagl.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,71 +72,73 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5D622AD62DE2F4E5006748C9 /* Asagl */ = {
+		5DF58EC02DFC39BB00B65AD1 /* Asagl */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5D622AE32DE2F4E7006748C9 /* Build configuration list for PBXNativeTarget "Asagl" */;
+			buildConfigurationList = 5DF58ECD2DFC39BD00B65AD1 /* Build configuration list for PBXNativeTarget "Asagl" */;
 			buildPhases = (
-				5D622AD32DE2F4E5006748C9 /* Sources */,
-				5D622AD42DE2F4E5006748C9 /* Frameworks */,
-				5D622AD52DE2F4E5006748C9 /* Resources */,
+				5DF58EBD2DFC39BB00B65AD1 /* Sources */,
+				5DF58EBE2DFC39BB00B65AD1 /* Frameworks */,
+				5DF58EBF2DFC39BB00B65AD1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				5D622AD92DE2F4E5006748C9 /* Asagl */,
+				5DF58EC32DFC39BB00B65AD1 /* Asagl */,
 			);
 			name = Asagl;
 			packageProductDependencies = (
-				5D037B552DE31889001C8AA8 /* Kingfisher */,
-				5DCE7BFB2DE44CE900D56823 /* Sparkle */,
-				5D01FCA62DF0218200DE05B4 /* GameKit */,
+				5DF58ED32DFC3D9200B65AD1 /* Sparkle */,
+				5DF58ED62DFC3DB700B65AD1 /* SwiftProtobuf */,
+				5DF58ED82DFC3DB700B65AD1 /* SwiftProtobufPluginLibrary */,
+				5DF58EDB2DFC3E2300B65AD1 /* SwiftZSTD */,
 			);
 			productName = Asagl;
-			productReference = 5D622AD72DE2F4E5006748C9 /* Asagl.app */;
+			productReference = 5DF58EC12DFC39BB00B65AD1 /* Asagl.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5D622ACF2DE2F4E5006748C9 /* Project object */ = {
+		5DF58EB92DFC39BB00B65AD1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1630;
-				LastUpgradeCheck = 1630;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
 				TargetAttributes = {
-					5D622AD62DE2F4E5006748C9 = {
-						CreatedOnToolsVersion = 16.3;
+					5DF58EC02DFC39BB00B65AD1 = {
+						CreatedOnToolsVersion = 16.4;
 					};
 				};
 			};
-			buildConfigurationList = 5D622AD22DE2F4E5006748C9 /* Build configuration list for PBXProject "Asagl" */;
-			developmentRegion = en;
+			buildConfigurationList = 5DF58EBC2DFC39BB00B65AD1 /* Build configuration list for PBXProject "Asagl" */;
+			developmentRegion = "zh-Hans";
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				"zh-Hans",
 			);
-			mainGroup = 5D622ACE2DE2F4E5006748C9;
+			mainGroup = 5DF58EB82DFC39BB00B65AD1;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				5D037B542DE31889001C8AA8 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				5DCE7BFA2DE44CE900D56823 /* XCRemoteSwiftPackageReference "Sparkle" */,
+				5DF58ED22DFC3D9200B65AD1 /* XCRemoteSwiftPackageReference "Sparkle" */,
+				5DF58ED52DFC3DB700B65AD1 /* XCRemoteSwiftPackageReference "swift-protobuf" */,
+				5DF58EDA2DFC3E2300B65AD1 /* XCRemoteSwiftPackageReference "SwiftZSTD" */,
 			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 5D622AD82DE2F4E5006748C9 /* Products */;
+			productRefGroup = 5DF58EC22DFC39BB00B65AD1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5D622AD62DE2F4E5006748C9 /* Asagl */,
+				5DF58EC02DFC39BB00B65AD1 /* Asagl */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5D622AD52DE2F4E5006748C9 /* Resources */ = {
+		5DF58EBF2DFC39BB00B65AD1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -145,7 +148,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5D622AD32DE2F4E5006748C9 /* Sources */ = {
+		5DF58EBD2DFC39BB00B65AD1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -155,7 +158,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		5D622AE12DE2F4E7006748C9 /* Debug */ = {
+		5DF58ECB2DFC39BD00B65AD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -209,7 +212,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -220,7 +223,7 @@
 			};
 			name = Debug;
 		};
-		5D622AE22DE2F4E7006748C9 /* Release */ = {
+		5DF58ECC2DFC39BD00B65AD1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -268,7 +271,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -277,7 +280,7 @@
 			};
 			name = Release;
 		};
-		5D622AE42DE2F4E7006748C9 /* Debug */ = {
+		5DF58ECE2DFC39BD00B65AD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -285,8 +288,7 @@
 				CODE_SIGN_ENTITLEMENTS = Asagl/Asagl.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 4;
-				DEAD_CODE_STRIPPING = YES;
+				CURRENT_PROJECT_VERSION = 10020250613;
 				DEVELOPMENT_TEAM = NV65B8VFUD;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -294,13 +296,13 @@
 				INFOPLIST_FILE = Asagl/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Asagl;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © Yuan Shine 2025-present, all rights reserved.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © Yuan Shine 2025 - present, all rights reserved.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
-				MARKETING_VERSION = 0.0.3;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = icu.bluedream.Asagl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -310,7 +312,7 @@
 			};
 			name = Debug;
 		};
-		5D622AE52DE2F4E7006748C9 /* Release */ = {
+		5DF58ECF2DFC39BD00B65AD1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -318,8 +320,7 @@
 				CODE_SIGN_ENTITLEMENTS = Asagl/Asagl.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 4;
-				DEAD_CODE_STRIPPING = YES;
+				CURRENT_PROJECT_VERSION = 10020250613;
 				DEVELOPMENT_TEAM = NV65B8VFUD;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -327,13 +328,13 @@
 				INFOPLIST_FILE = Asagl/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Asagl;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © Yuan Shine 2025-present, all rights reserved.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © Yuan Shine 2025 - present, all rights reserved.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
-				MARKETING_VERSION = 0.0.3;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = icu.bluedream.Asagl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -346,20 +347,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5D622AD22DE2F4E5006748C9 /* Build configuration list for PBXProject "Asagl" */ = {
+		5DF58EBC2DFC39BB00B65AD1 /* Build configuration list for PBXProject "Asagl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D622AE12DE2F4E7006748C9 /* Debug */,
-				5D622AE22DE2F4E7006748C9 /* Release */,
+				5DF58ECB2DFC39BD00B65AD1 /* Debug */,
+				5DF58ECC2DFC39BD00B65AD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5D622AE32DE2F4E7006748C9 /* Build configuration list for PBXNativeTarget "Asagl" */ = {
+		5DF58ECD2DFC39BD00B65AD1 /* Build configuration list for PBXNativeTarget "Asagl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D622AE42DE2F4E7006748C9 /* Debug */,
-				5D622AE52DE2F4E7006748C9 /* Release */,
+				5DF58ECE2DFC39BD00B65AD1 /* Debug */,
+				5DF58ECF2DFC39BD00B65AD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -367,15 +368,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5D037B542DE31889001C8AA8 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 8.3.2;
-			};
-		};
-		5DCE7BFA2DE44CE900D56823 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+		5DF58ED22DFC3D9200B65AD1 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sparkle-project/Sparkle";
 			requirement = {
@@ -383,24 +376,46 @@
 				minimumVersion = 2.7.0;
 			};
 		};
+		5DF58ED52DFC3DB700B65AD1 /* XCRemoteSwiftPackageReference "swift-protobuf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-protobuf.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.30.0;
+			};
+		};
+		5DF58EDA2DFC3E2300B65AD1 /* XCRemoteSwiftPackageReference "SwiftZSTD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aperedera/SwiftZSTD";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5D01FCA62DF0218200DE05B4 /* GameKit */ = {
+		5DF58ED32DFC3D9200B65AD1 /* Sparkle */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = GameKit;
-		};
-		5D037B552DE31889001C8AA8 /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5D037B542DE31889001C8AA8 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-		5DCE7BFB2DE44CE900D56823 /* Sparkle */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5DCE7BFA2DE44CE900D56823 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			package = 5DF58ED22DFC3D9200B65AD1 /* XCRemoteSwiftPackageReference "Sparkle" */;
 			productName = Sparkle;
+		};
+		5DF58ED62DFC3DB700B65AD1 /* SwiftProtobuf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DF58ED52DFC3DB700B65AD1 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobuf;
+		};
+		5DF58ED82DFC3DB700B65AD1 /* SwiftProtobufPluginLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DF58ED52DFC3DB700B65AD1 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobufPluginLibrary;
+		};
+		5DF58EDB2DFC3E2300B65AD1 /* SwiftZSTD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DF58EDA2DFC3E2300B65AD1 /* XCRemoteSwiftPackageReference "SwiftZSTD" */;
+			productName = SwiftZSTD;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 5D622ACF2DE2F4E5006748C9 /* Project object */;
+	rootObject = 5DF58EB92DFC39BB00B65AD1 /* Project object */;
 }
