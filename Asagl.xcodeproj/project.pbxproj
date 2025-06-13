@@ -11,6 +11,7 @@
 		5DF58ED72DFC3DB700B65AD1 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 5DF58ED62DFC3DB700B65AD1 /* SwiftProtobuf */; };
 		5DF58ED92DFC3DB700B65AD1 /* SwiftProtobufPluginLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 5DF58ED82DFC3DB700B65AD1 /* SwiftProtobufPluginLibrary */; };
 		5DF58EDC2DFC3E2300B65AD1 /* SwiftZSTD in Frameworks */ = {isa = PBXBuildFile; productRef = 5DF58EDB2DFC3E2300B65AD1 /* SwiftZSTD */; };
+		5DF58F4B2DFC744100B65AD1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5DF58F4A2DFC744100B65AD1 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 				5DF58ED42DFC3D9200B65AD1 /* Sparkle in Frameworks */,
 				5DF58ED72DFC3DB700B65AD1 /* SwiftProtobuf in Frameworks */,
 				5DF58EDC2DFC3E2300B65AD1 /* SwiftZSTD in Frameworks */,
+				5DF58F4B2DFC744100B65AD1 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +95,7 @@
 				5DF58ED62DFC3DB700B65AD1 /* SwiftProtobuf */,
 				5DF58ED82DFC3DB700B65AD1 /* SwiftProtobufPluginLibrary */,
 				5DF58EDB2DFC3E2300B65AD1 /* SwiftZSTD */,
+				5DF58F4A2DFC744100B65AD1 /* Kingfisher */,
 			);
 			productName = Asagl;
 			productReference = 5DF58EC12DFC39BB00B65AD1 /* Asagl.app */;
@@ -126,6 +129,7 @@
 				5DF58ED22DFC3D9200B65AD1 /* XCRemoteSwiftPackageReference "Sparkle" */,
 				5DF58ED52DFC3DB700B65AD1 /* XCRemoteSwiftPackageReference "swift-protobuf" */,
 				5DF58EDA2DFC3E2300B65AD1 /* XCRemoteSwiftPackageReference "SwiftZSTD" */,
+				5DF58F492DFC744100B65AD1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5DF58EC22DFC39BB00B65AD1 /* Products */;
@@ -392,6 +396,14 @@
 				kind = branch;
 			};
 		};
+		5DF58F492DFC744100B65AD1 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.3.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -414,6 +426,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5DF58EDA2DFC3E2300B65AD1 /* XCRemoteSwiftPackageReference "SwiftZSTD" */;
 			productName = SwiftZSTD;
+		};
+		5DF58F4A2DFC744100B65AD1 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DF58F492DFC744100B65AD1 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
