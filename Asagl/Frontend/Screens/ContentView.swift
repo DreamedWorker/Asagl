@@ -21,9 +21,10 @@ struct ContentView: View {
                         SideGamesBar(changeGame: { game in selectedGame = game })
                         VStack {
                             Spacer()
-                            HStack {
+                            HStack(alignment: .bottom) {
                                 GameNewsPane(gameType: .valueOf(name: selectedGame))
                                 Spacer()
+                                StartGameButton(gameType: .valueOf(name: selectedGame))
                             }
                             .padding()
                         }

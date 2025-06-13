@@ -32,6 +32,9 @@ struct AsaglApp: App {
             })
             CommandGroup(replacing: .newItem, addition: {})
         }
+        Settings {
+            WineConfigView()
+        }
     }
 }
 
@@ -42,5 +45,6 @@ class AsaglAppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationWillFinishLaunching(_ notification: Notification) {
         LocalPaths.checkDirs()
+        GameInstaller.makeDirs()
     }
 }

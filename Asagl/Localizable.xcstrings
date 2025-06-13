@@ -1,6 +1,17 @@
 {
   "sourceLanguage" : "zh-Hans",
   "strings" : {
+    "%lld/%lld" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld/%2$lld"
+          }
+        }
+      },
+      "shouldTranslate" : false
+    },
     "app.command.checkUpdate" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -8,6 +19,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "检查更新…"
+          }
+        }
+      }
+    },
+    "def.cancel" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取消"
+          }
+        }
+      }
+    },
+    "def.close" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关闭"
           }
         }
       }
@@ -38,6 +69,213 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "警告"
+          }
+        }
+      }
+    },
+    "game.adv.fixup" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "尝试修复启动时错误"
+          }
+        }
+      }
+    },
+    "game.adv.hud" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启用 Metal 性能监视屏幕"
+          }
+        }
+      }
+    },
+    "game.adv.msync" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启用 MSync"
+          }
+        }
+      }
+    },
+    "game.adv.retina" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启用高分辨率模式"
+          }
+        }
+      }
+    },
+    "game.adv.retina.failed" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "切换显示模式失败，%@"
+          }
+        }
+      }
+    },
+    "game.adv.retina.ok" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "切换显示模式成功。"
+          }
+        }
+      }
+    },
+    "game.gi" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "原神"
+          }
+        }
+      }
+    },
+    "game.indicator.downloading" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在下载"
+          }
+        }
+      }
+    },
+    "game.indicator.setup" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "需要设置"
+          }
+        }
+      }
+    },
+    "game.settings.delete.exp" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "我们将删除你选定的路径下的全部内容并清除我们所记录的游戏路径，此操作不可恢复。"
+          }
+        }
+      }
+    },
+    "game.settings.delete.tip" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "确定要删除游戏吗？"
+          }
+        }
+      }
+    },
+    "game.settings.location" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "游戏数据路径"
+          }
+        }
+      }
+    },
+    "game.settings.openIn" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在访达中打开"
+          }
+        }
+      }
+    },
+    "game.settings.rechoose" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重新定位"
+          }
+        }
+      }
+    },
+    "game.settings.rechoose.tip" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你需要选择%@和 config.ini 同时存在的路径作为游戏数据路径，否则我们视为该路径不存在游戏。"
+          }
+        }
+      }
+    },
+    "game.settings.tab.baisc" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "基本信息"
+          }
+        }
+      }
+    },
+    "game.settings.uninstall" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "卸载游戏"
+          }
+        }
+      }
+    },
+    "game.start" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开始游戏"
+          }
+        }
+      }
+    },
+    "game.waiting.download" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请等待游戏下载完成。"
+          }
+        }
+      }
+    },
+    "game.zzz" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "绝区零"
           }
         }
       }
@@ -113,6 +351,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "请稍等…"
+          }
+        }
+      }
+    },
+    "settings.tab.game" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "游戏设置"
+          }
+        }
+      }
+    },
+    "settings.tab.wine" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wine 设置"
           }
         }
       }
