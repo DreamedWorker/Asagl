@@ -4,6 +4,31 @@
     <title>Asagl 更新日志</title>
     <description>Most recent changes with links to updates.</description>
     <language>zh</language>
+    <item>
+        <title>Version 1.0.0</title>
+        <sparkle:version>10020250613</sparkle:version>
+        <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+        <link>https://github.com/DreamedWorker/Asagl</link>
+        <sparkle:fullReleaseNotesLink>releasenotes.html</sparkle:fullReleaseNotesLink>
+        <description>
+          <![CDATA[
+          <main>
+            <p>你好你好哇～<p>
+
+本次带来 Asagl 程序的第一个正式版本，功能简要概括如下：
+<ul>
+<li>提供 wine 的下载和管理</li>
+<li>提供部分应用程序的下载和更新*</li>
+        </ul>
+Full Changelog: https://github.com/DreamedWorker/Asagl/commits/v1.0.0
+
+<p>*：更新功能还在测试中，使用时请严格遵从提示，并事先备份好数据。</p>
+        </main>
+          ]]>
+        </description>
+        <pubDate>2025年6月14日 周六 17:00</pubDate>
+        <enclosure url="https://github.com/DreamedWorker/Asagl/releases/download/v1.0.0/Asagl-arm64-1.0.0.zip" length="8886732" type="application/octet-stream" sparkle:edSignature="7o+51Xfa19HSqQ4pi9/lPJoQjPOq6NsFFZ9nyhmtOUGq2N4GsbDTjfq49ClB4b6433GufjFg2o0NBv0eMxoNCQ==" />
+        </item>
         <item>
         <title>Version 0.0.3</title>
         <sparkle:version>4</sparkle:version>
