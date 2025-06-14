@@ -117,7 +117,7 @@
 				};
 			};
 			buildConfigurationList = 5DF58EBC2DFC39BB00B65AD1 /* Build configuration list for PBXProject "Asagl" */;
-			developmentRegion = "zh-Hans";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,

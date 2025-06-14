@@ -46,7 +46,7 @@ struct StartGameButton: View {
                 }.padding(.leading, 8).padding(.trailing, 16)
             }
         }
-        .background(.regularMaterial.opacity(0.8))
+        .background(Color.accent)
         .clipShape(RoundedRectangle(cornerRadius: 32))
         .onAppear {
             viewModel.checkSettings(type: gameType)
@@ -76,9 +76,12 @@ struct StartGameButton: View {
                         },
                         reLocationGame: {
                             showSettingsPane = false
-                            Task { await chooseDir(type: gameType) }
+                            chooseDir(type: gameType)
                         }
                     ).tabItem({ Text("game.settings.tab.baisc") })
+                    GameUpdatePane(gameType: gameType).tabItem {
+                        Text("game.settings.tab.update")
+                    }
                 }
             }
             .padding()
@@ -94,7 +97,7 @@ struct StartGameButton: View {
     private func chooseDir(type: GameType) {
         let key = (type == .GenshinCN) ? AppConfigKey.GENSHIN_EXEC_PATH : AppConfigKey.ZENLESS_EXEC_PATH
         let panel = NSOpenPanel()
-        panel.message = "请选择游戏可执行文件和config.ini同时存在的路径"
+        panel.message = NSLocalizedString("game.panel.choose", comment: "")
         panel.canChooseDirectories = true
         panel.allowsMultipleSelection = false
         panel.canChooseFiles = false
@@ -201,7 +204,7 @@ fileprivate class StartGameViewModel: ObservableObject, @unchecked Sendable {
             progress: { _, _, cur, tot in
                 DispatchQueue.main.async {
                     self.currentChunk = cur
-                    self.progress = Double(cur/tot)
+                    self.progress = Double(Double(cur) / Double(tot))
                 }
             },
             completion: { isSuccessed, errMsg in
