@@ -92,7 +92,8 @@ struct GameUpdatePane: View {
                                                         isMainResource: main,
                                                         sendInfo: { info in
                                                             alertMate.showAlert(msg: info)
-                                                        }
+                                                        },
+                                                        gameVersion: newVersion
                                                     )
                                                 } catch {
                                                     DispatchQueue.main.async {
