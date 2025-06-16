@@ -5,6 +5,23 @@
     <description>Most recent changes with links to updates.</description>
     <language>zh</language>
     <item>
+        <title>Version 1.0.1</title>
+        <sparkle:version>10120250616</sparkle:version>
+        <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+        <link>https://github.com/DreamedWorker/Asagl</link>
+        <sparkle:fullReleaseNotesLink>https://github.com/DreamedWorker/Asagl/compare/v1.0.0...v1.0.1</sparkle:fullReleaseNotesLink>
+        <description>
+          <![CDATA[
+            <ul>
+              <li>【新增】支持更新 Wine 版本，可以在设置的二级菜单中选择</li>
+              <li>【修复】修复了一些已知的问题</li>
+            </ul>
+          ]]>
+        </description>
+        <pubDate>2025年6月16日 周一 16:00</pubDate>
+        <enclosure url="https://github.com/DreamedWorker/Asagl/releases/download/v1.0.1/Asagl-arm64.zip" length="8912509" type="application/octet-stream" sparkle:edSignature="lZ6z84TWHX/9FCsIdL18TaMx+MUG9zN67tv9OVqJRo4C4Y3HYLx/M4UbY75DGQHO1+ayP77Hku3nITZu6+R9CA==" />
+        </item>
+    <item>
         <title>Version 1.0.0</title>
         <sparkle:version>10020250613</sparkle:version>
         <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
