@@ -11,10 +11,10 @@ class WineInstaller {
     static let REG_MAC_DRIVER = #"HKCU\Software\Wine\Mac Driver"#
     private static let tar = URL(fileURLWithPath: "/usr/bin/tar")
     
-    static func installAndEnableWine(temp: URL, wineDir: URL) throws {
+    static func installAndEnableWine(temp: URL, wineDir: URL, wineTarName: String = "wine.tar.gz") throws {
         // 将下载的临时文件解压并固定
         try release2wineDir(source: temp, dest: wineDir)
-        let innerFile = wineDir.appending(component: "wine.tar.gz")
+        let innerFile = wineDir.appending(component: wineTarName)
         if FileManager.default.fileExists(atPath: innerFile.path(percentEncoded: false)) {
             try! FileManager.default.removeItem(at: innerFile)
         }

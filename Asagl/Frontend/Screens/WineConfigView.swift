@@ -16,6 +16,9 @@ struct WineConfigView: View {
             GameConfig().tabItem {
                 Label("settings.tab.game", systemImage: "gamecontroller")
             }
+            WineUpdateSwitcher().tabItem {
+                Label("settings.tab.wineUpd", systemImage: "doc.badge.clock")
+            }
         }
         .frame(width: 300)
     }

@@ -20,98 +20,102 @@ struct GameUpdatePane: View {
         AppSettings.getPrefValue(key: AppConfigKey.GENSHIN_EXEC_PATH, defVal: "") :
         AppSettings.getPrefValue(key: AppConfigKey.ZENLESS_EXEC_PATH, defVal: "")
         let configPath = URL(filePath: gameExec).deletingLastPathComponent().appending(component: "config.ini")
-        let gameConfig = INIFileReader(string: try! String(contentsOf: configPath, encoding: .utf8))
         if gameExec == "" {
             ContentUnavailableView("game.settings.blocked", systemImage: "hand.raised")
         } else {
-            NavigationStack {
-                HStack {
-                    Text("game.upd.currentVersion")
-                    Spacer()
-                    Text(gameVersionNow).foregroundStyle(.secondary)
-                }
-                .onAppear {
-                    gameVersionNow = gameConfig.value(forKey: "game_version") ?? "0.0.0"
-                }
-                if newVersion != "" {
+            let gameConfig = try? INIFileReader(string: String(contentsOf: configPath, encoding: .utf8))
+            if let gameConfig = gameConfig {
+                NavigationStack {
                     HStack {
-                        Text("game.upd.remoteVersion")
+                        Text("game.upd.currentVersion")
                         Spacer()
-                        Text(newVersion).foregroundStyle(.secondary)
+                        Text(gameVersionNow).foregroundStyle(.secondary)
                     }
-                }
-                HStack {
-                    Spacer()
-                    Button("game.upd.check") {
-                        Task {
-                            do {
-                                let result = try await GameUpdater.downloadNeoManifest(gameType: gameType, originVersion: gameVersionNow)
-                                DispatchQueue.main.async {
-                                    var tempList = result.data.manifests
-                                    tempList = tempList.sorted(by: { $0.categoryID < $1.categoryID })
-                                    self.gameChunkManifests = tempList
-                                    self.newVersion = result.data.tag
-                                }
-                            } catch {
-                                DispatchQueue.main.async {
-                                    self.alertMate.showAlert(msg: error.localizedDescription)
-                                }
-                            }
+                    .onAppear {
+                        gameVersionNow = gameConfig.value(forKey: "game_version") ?? "0.0.0"
+                    }
+                    if newVersion != "" {
+                        HStack {
+                            Text("game.upd.remoteVersion")
+                            Spacer()
+                            Text(newVersion).foregroundStyle(.secondary)
                         }
                     }
-                }
-                .padding(.bottom)
-                if dlHost.showDownloadBar {
-                    VStack {
-                        ProgressView(value: dlHost.progress, total: 1.0)
-                        HStack {
-                            Text("\(dlHost.currentChunk)/\(dlHost.totalChunks)").font(.callout).monospaced()
-                            Spacer()
-                            Text("game.upd.waiting").font(.callout).foregroundStyle(.secondary)
+                    HStack {
+                        Spacer()
+                        Button("game.upd.check") {
+                            Task {
+                                do {
+                                    let result = try await GameUpdater.downloadNeoManifest(gameType: gameType, originVersion: gameVersionNow)
+                                    DispatchQueue.main.async {
+                                        var tempList = result.data.manifests
+                                        tempList = tempList.sorted(by: { $0.categoryID < $1.categoryID })
+                                        self.gameChunkManifests = tempList
+                                        self.newVersion = result.data.tag
+                                    }
+                                } catch {
+                                    DispatchQueue.main.async {
+                                        self.alertMate.showAlert(msg: error.localizedDescription)
+                                    }
+                                }
+                            }
                         }
                     }
                     .padding(.bottom)
-                }
-                if !gameChunkManifests.isEmpty {
-                    ScrollView(showsIndicators: false) {
-                        LazyVStack {
-                            ForEach(gameChunkManifests, id: \.categoryID) { manifest in
-                                FeatureTile(iconName: "list.clipboard", descriptionKey: manifest.categoryName)
-                                    .onTapGesture {
-                                        Task {
-                                            do {
-                                                let preparedDownloadResource = try await GameUpdater.doPreparation(
-                                                    gameType: gameType, originVersion: gameVersionNow, neoVersion: newVersion, item: manifest
-                                                )
-                                                let main = manifest.categoryName.contains("游戏资源")
-                                                dlHost.doDelete(preparedDownloadResource.toDelete, gameExec: gameExec)
-                                                dlHost.doDownload(
-                                                    preparedDownloadResource.toDownload, manifest: manifest, gameType: gameType,
-                                                    oldVersion: gameVersionNow, gameExec: gameExec,
-                                                    isMainResource: main,
-                                                    sendInfo: { info in
-                                                        alertMate.showAlert(msg: info)
+                    if dlHost.showDownloadBar {
+                        VStack {
+                            ProgressView(value: dlHost.progress, total: 1.0)
+                            HStack {
+                                Text("\(dlHost.currentChunk)/\(dlHost.totalChunks)").font(.callout).monospaced()
+                                Spacer()
+                                Text("game.upd.waiting").font(.callout).foregroundStyle(.secondary)
+                            }
+                        }
+                        .padding(.bottom)
+                    }
+                    if !gameChunkManifests.isEmpty {
+                        ScrollView(showsIndicators: false) {
+                            LazyVStack {
+                                ForEach(gameChunkManifests, id: \.categoryID) { manifest in
+                                    FeatureTile(iconName: "list.clipboard", descriptionKey: manifest.categoryName)
+                                        .onTapGesture {
+                                            Task {
+                                                do {
+                                                    let preparedDownloadResource = try await GameUpdater.doPreparation(
+                                                        gameType: gameType, originVersion: gameVersionNow, neoVersion: newVersion, item: manifest
+                                                    )
+                                                    let main = manifest.categoryName.contains("游戏资源")
+                                                    dlHost.doDelete(preparedDownloadResource.toDelete, gameExec: gameExec)
+                                                    dlHost.doDownload(
+                                                        preparedDownloadResource.toDownload, manifest: manifest, gameType: gameType,
+                                                        oldVersion: gameVersionNow, gameExec: gameExec,
+                                                        isMainResource: main,
+                                                        sendInfo: { info in
+                                                            alertMate.showAlert(msg: info)
+                                                        }
+                                                    )
+                                                } catch {
+                                                    DispatchQueue.main.async {
+                                                        self.alertMate.showAlert(msg: error.localizedDescription, type: .Error)
                                                     }
-                                                )
-                                            } catch {
-                                                DispatchQueue.main.async {
-                                                    self.alertMate.showAlert(msg: error.localizedDescription, type: .Error)
                                                 }
                                             }
                                         }
-                                    }
+                                }
                             }
                         }
-                    }
-                    .frame(minHeight: 200, maxHeight: 300)
-                    .clipShape(RoundedRectangle(cornerRadius: 12))
-                    HStack {
-                        Text("game.upd.tip").font(.subheadline).foregroundStyle(.secondary)
+                        .frame(minHeight: 200, maxHeight: 300)
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
+                        HStack {
+                            Text("game.upd.tip").font(.subheadline).foregroundStyle(.secondary)
+                        }
                     }
                 }
+                .padding()
+                .alert(alertMate.title, isPresented: $alertMate.showIt, actions: {}, message: { Text(alertMate.msg) })
+            } else {
+                ContentUnavailableView("game.settings.blocked", systemImage: "hand.raised")
             }
-            .padding()
-            .alert(alertMate.title, isPresented: $alertMate.showIt, actions: {}, message: { Text(alertMate.msg) })
         }
     }
 }

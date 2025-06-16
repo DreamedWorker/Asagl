@@ -99,6 +99,8 @@ fileprivate struct WizardDownloadWine: View {
                                     Task {
                                         do {
                                             try WineInstaller.installAndEnableWine(temp: temp, wineDir: LocalPaths.wineDir)
+                                            let versionFile = LocalPaths.wineDir.appending(component: "version.txt")
+                                            try "10.9.0".data(using: .utf8)!.write(to: versionFile)
                                             await changeUI()
                                         } catch {
                                             await MainActor.run {
