@@ -5,6 +5,27 @@
     <description>Most recent changes with links to updates.</description>
     <language>zh</language>
     <item>
+        <title>Version 2.0.0</title>
+        <sparkle:version>20020250701</sparkle:version>
+        <sparkle:shortVersionString>2.0.0</sparkle:shortVersionString>
+        <link>https://github.com/DreamedWorker/Asagl</link>
+        <sparkle:fullReleaseNotesLink>https://github.com/DreamedWorker/Asagl/compare/v1.0.2...v2.0.0</sparkle:fullReleaseNotesLink>
+        <description>
+          <![CDATA[
+            <ul>
+              <li>【新增】带来了一个相册页面，可以查看游戏内保存下来的截图</li>
+              <li>【新增】带来了一个基于Process的游戏时间记录和查看组件</li>
+              <li>【新增】允许替换某些文件以便顺利运行应用程序</li>
+              <li>【优化】重写了主页、初始化页、软件设置页、程序设置页的布局</li>
+              <li>【优化】在部分页面补回了动画效果</li>
+              <li>【修复】修复了一些已知问题</li>
+            </ul>
+          ]]>
+        </description>
+        <pubDate>2025年7月10日 周四 19:00</pubDate>
+        <enclosure url="https://github.com/DreamedWorker/Asagl/releases/download/v2.0.0/Asagl-v2.0.0-arm64.zip" length="8142627" type="application/octet-stream" sparkle:edSignature="uEQhcNF65P6IFDPJ2m1wjPNojzgH5+41IyGhIGelBoNr92Qzzr7f38bVOd6xvrVEZwcjA9QiyE+3W0L+vZjWCQ==" />
+        </item>
+    <item>
         <title>Version 1.0.2</title>
         <sparkle:version>10220250616</sparkle:version>
         <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
