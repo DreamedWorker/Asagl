@@ -6,7 +6,7 @@
     <language>zh</language>
     <item>
         <title>Version 2.0.0</title>
-        <sparkle:version>20020250701</sparkle:version>
+        <sparkle:version>20020250702</sparkle:version>
         <sparkle:shortVersionString>2.0.0</sparkle:shortVersionString>
         <link>https://github.com/DreamedWorker/Asagl</link>
         <sparkle:fullReleaseNotesLink>https://github.com/DreamedWorker/Asagl/compare/v1.0.2...v2.0.0</sparkle:fullReleaseNotesLink>
@@ -22,8 +22,8 @@
             </ul>
           ]]>
         </description>
-        <pubDate>2025年7月10日 周四 19:00</pubDate>
-        <enclosure url="https://github.com/DreamedWorker/Asagl/releases/download/v2.0.0/Asagl-v2.0.0-arm64.zip" length="8142627" type="application/octet-stream" sparkle:edSignature="uEQhcNF65P6IFDPJ2m1wjPNojzgH5+41IyGhIGelBoNr92Qzzr7f38bVOd6xvrVEZwcjA9QiyE+3W0L+vZjWCQ==" />
+        <pubDate>2025年7月10日 周四 20:00</pubDate>
+        <enclosure url="https://github.com/DreamedWorker/Asagl/releases/download/v2.0.0/Asagl-v2.0.0-arm64.zip" length="8142244" type="application/octet-stream" sparkle:edSignature="LmCoCz+Kv6OGNkjk4z3RgpGA5ZHAFJr5+DBl0/vmXgzIW94wNypklhGb16MJjKI6xXRItlb/Wr1imuZRE69RAg==" />
         </item>
     <item>
         <title>Version 1.0.2</title>
