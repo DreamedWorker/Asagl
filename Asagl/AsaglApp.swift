@@ -19,7 +19,7 @@ struct AsaglApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeScreen()
                 .ignoresSafeArea()
                 .frame(minWidth: 1280, idealWidth: 1280, maxWidth: 1280, minHeight: 720, idealHeight: 720, maxHeight: 720)
         }
@@ -31,9 +31,6 @@ struct AsaglApp: App {
                 CheckForUpdatesView(updater: updaterController.updater)
             })
             CommandGroup(replacing: .newItem, addition: {})
-        }
-        Settings {
-            WineConfigView()
         }
     }
 }
