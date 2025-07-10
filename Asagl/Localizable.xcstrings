@@ -1,9 +1,9 @@
 {
-  "sourceLanguage" : "en",
+  "sourceLanguage" : "zh-Hans",
   "strings" : {
     "%lld/%lld" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
             "value" : "%1$lld/%2$lld"
@@ -45,22 +45,6 @@
         }
       }
     },
-    "def.close" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Close"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "关闭"
-          }
-        }
-      }
-    },
     "def.confirm" : {
       "localizations" : {
         "en" : {
@@ -93,6 +77,23 @@
         }
       }
     },
+    "def.refresh" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Refresh"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刷新"
+          }
+        }
+      }
+    },
     "def.warning" : {
       "localizations" : {
         "en" : {
@@ -105,6 +106,244 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "警告"
+          }
+        }
+      }
+    },
+    "dllrep.failed.rollback" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unable to complete the rollback operation, the backup file was not found! Your Wine environment may have been damaged. Please use first aid tools to perform a complete repair."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法完成回滚操作，未找到备份文件！你的Wine环境可能已经损坏，请使用急救工具执行完整修复。"
+          }
+        }
+      }
+    },
+    "eme.dl.dll" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Download auxiliary DLL"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下载辅助性DLL"
+          }
+        }
+      }
+    },
+    "eme.exp" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "When there is an error that cannot be handled automatically in your Wine environment, you can use this tool to restore it to normal (do not use this function unless there is an emergency or suggested by the developer)."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "当你的Wine环境出现无法自动处理的错误时，你可以使用此工具使其恢复到正常状态（除非有紧急情况或者开发人员建议，否则请勿使用此功能）。"
+          }
+        }
+      }
+    },
+    "eme.failed" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "We can't complete the first aid. You need to completely delete this software and reinstall it!"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "我们无法完成急救，你需要完全删除本软件后重新安装！"
+          }
+        }
+      }
+    },
+    "eme.info.repairOK" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The simple repair is successful, and you can continue to use it!"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "执行简易修复成功，你可以继续使用了！"
+          }
+        }
+      }
+    },
+    "eme.start" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start repairing"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开始修复"
+          }
+        }
+      }
+    },
+    "eme.start.full" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Complete repair"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完整修复"
+          }
+        }
+      }
+    },
+    "emergency.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "First Aid Tool"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "急救工具"
+          }
+        }
+      }
+    },
+    "gallery.empty" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "There are no screenshots or photos in the game."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "暂无游戏内的截图或照片。"
+          }
+        }
+      }
+    },
+    "game.adv.error.applyLackFile" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No files for replacement were found!"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未找到用于替换的文件！"
+          }
+        }
+      }
+    },
+    "game.adv.error.backupDll" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unable to back up dynamic link library files."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法备份动态链接库文件。"
+          }
+        }
+      }
+    },
+    "game.adv.error.replaceDll" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "We encountered a problem when replacing it, and it could not be solved by rolling back. Your Wine environment may have been damaged. Please use first aid tools to perform a complete repair."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "我们在替换时遇到了问题，且通过回滚操作无法解决，你的Wine环境可能已经损坏了，请使用急救工具执行完整修复。"
+          }
+        }
+      }
+    },
+    "game.adv.error.replaceDllRepaired" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The replacement of DLL failed. We have rolled back the operation with the backup file."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "替换DLL失败，我们已经用备份文件回滚了操作。"
+          }
+        }
+      }
+    },
+    "game.adv.error.rollbackDll" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unable to perform the rollback operation, %@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法执行回滚操作，%@"
           }
         }
       }
@@ -139,6 +378,57 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "启用 Metal 性能监视屏幕"
+          }
+        }
+      }
+    },
+    "game.adv.info.backupDll" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The backup of the dynamic link library is completed."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "动态链接库备份完成。"
+          }
+        }
+      }
+    },
+    "game.adv.info.replaceDll" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Replace DLL successfully."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "替换DLL成功。"
+          }
+        }
+      }
+    },
+    "game.adv.info.rollbackDll" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DLL rolled back successfully."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DLL回滚成功。"
           }
         }
       }
@@ -209,18 +499,70 @@
         }
       }
     },
-    "game.gi" : {
+    "game.adv.uesDll" : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Genshin Impact"
+            "value" : "Use the auxiliary dynamic link library"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "原神"
+            "value" : "使用辅助性动态链接库"
+          }
+        }
+      }
+    },
+    "game.adv.uesDll.apply" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apply"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "应用文件"
+          }
+        }
+      }
+    },
+    "game.adv.uesDll.rollback" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restore"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "还原更改"
+          }
+        }
+      }
+    },
+    "game.adv.useDll.backup" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Backup"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "备份"
           }
         }
       }
@@ -523,6 +865,23 @@
         }
       }
     },
+    "game.upd.resList" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Downloadable game resources"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "可下载的游戏资源"
+          }
+        }
+      }
+    },
     "game.upd.tip" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -557,66 +916,121 @@
         }
       }
     },
-    "game.waiting.download" : {
+    "game.waiting.downloadPaused" : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Please wait for the game download to be completed."
+            "value" : "The download has been suspended."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "请等待游戏下载完成。"
+            "value" : "下载已暂停"
           }
         }
       }
     },
-    "game.zzz" : {
+    "gametype.hk4e_cn" : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Zenless Zone Zero"
+            "value" : "Genshin Impact (CN - Official)"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "绝区零"
+            "value" : "原神（国服·官方）"
           }
         }
       }
     },
-    "home.side.gi" : {
+    "gametype.nap_cn" : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Genshin Impact"
+            "value" : "Zenless Zone Zero (CN - Official)"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "原神"
+            "value" : "绝区零（国服·官方）"
           }
         }
       }
     },
-    "home.side.zzz" : {
+    "home.gametime" : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Zenless Zone Zero"
+            "value" : "%@ h %@ m"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "绝区零"
+            "value" : "%@小时%@分钟"
+          }
+        }
+      }
+    },
+    "home.side.emergency" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "First Aid Tool"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "急救工具"
+          }
+        }
+      }
+    },
+    "home.side.screenshot" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Screenshots"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "游戏内截图"
+          }
+        }
+      }
+    },
+    "home.side.settings" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置"
           }
         }
       }
@@ -807,6 +1221,23 @@
         }
       }
     },
+    "upd.wine.fatalError" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "We encountered serious problems when dealing with the Wine environment and cannot be repaired, please use first aid tools to reset your Wine environment!"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "处理Wine环境时遇到严重问题且无法修复，请使用急救工具重置你的Wine环境！"
+          }
+        }
+      }
+    },
     "upd.wine.remoteVersions" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -820,22 +1251,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "当前可选版本"
-          }
-        }
-      }
-    },
-    "upd.wine.title" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Wine update"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Wine 更新"
           }
         }
       }
@@ -902,24 +1317,24 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "当前的 Wine 版本： %@"
+            "value" : "当前的 Wine 版本"
           }
         }
       }
     },
-    "wizard.download.exp" : {
+    "wizard.download.directly" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "We need to download and configure the support environment, which is the basis for starting everything."
+            "value" : "Download directly"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "我们需要下载并配置好支持环境，这是开始一切的基础。"
+            "value" : "直接下载"
           }
         }
       }
@@ -958,23 +1373,6 @@
         }
       }
     },
-    "wizard.download.title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Download the support file"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "下载支持文件"
-          }
-        }
-      }
-    },
     "wizard.exp" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -987,7 +1385,160 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "进入动画游戏的世界，从这里开始！"
+            "value" : "这是一个专为macOS 平台设计的 Wine前端工具，可以让你轻松地进行游戏而无需处理繁琐的命令行。"
+          }
+        }
+      }
+    },
+    "wizard.folder.exp" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In order to unify the management of the data resources of the application, our main files are stored in %@. Unless necessary, please do not delete or change the files here at will. At the same time, the content of the preferences of this application is stored in the location designated by the system. Please do not delete it to avoid unpredictable problems."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "为了统一管理应用的数据资源，我们的主要文件存放在%@，除非必要，否则请不要随意删改这里的文件。同时，本应用的偏好设置的内容存放在系统指定的位置，请勿删除以免出现无法预见的问题。"
+          }
+        }
+      }
+    },
+    "wizard.folder.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "File storage location"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "文件存储位置提示"
+          }
+        }
+      }
+    },
+    "wizard.form.dllInstallStatus" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auxiliary DLL file(s)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "辅助性动态链接库文件"
+          }
+        }
+      }
+    },
+    "wizard.form.dlMode" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please select the download source"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请选择下载源"
+          }
+        }
+      }
+    },
+    "wizard.form.download" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Download"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下载"
+          }
+        }
+      }
+    },
+    "wizard.form.wineDownloaded" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Downloaded"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已下载"
+          }
+        }
+      }
+    },
+    "wizard.form.wineInstalled" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Installed"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已安装"
+          }
+        }
+      }
+    },
+    "wizard.form.wineInstallStatus" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wine In Mashine"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wine 安装情况"
+          }
+        }
+      }
+    },
+    "wizard.form.wineNotInstalled" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not installed"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未安装"
           }
         }
       }
@@ -1004,40 +1555,24 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "本软件系非营利的开放源代码软件，你的下载、安装、使用行为均系资源，由此产生的任何责任均与开发者无关。请在安装学习后的24小时内完全卸载本应用，如果无视的则你需自行承担全部责任。"
-          }
-        }
-      }
-    },
-    "wizard.importance.doc" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Application usage statement"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "应用使用声明"
+            "value" : "本软件系非营利的开放源代码软件，你的下载、安装、使用行为均系资源，由此产生的任何责任均与开发者无关。请在安装学习后的24小时内完全卸载本应用，如果无视则你需自行承担全部责任。"
           }
         }
       }
     },
     "wizard.start" : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Let's start."
+            "value" : "Let's start!"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "让我们开始吧"
+            "value" : "让我们开始吧！"
           }
         }
       }
