@@ -10,6 +10,8 @@ import SwiftUI
 struct GameSettingsWindow: View {
     @State private var uiPart: UIPart = .basic
     let gameType: GameType
+    let refreshGameState: () -> Void
+    let relocationGame: () -> Void
     
     var body: some View {
         NavigationSplitView(
@@ -28,7 +30,7 @@ struct GameSettingsWindow: View {
             detail: {
                 switch uiPart {
                 case .basic:
-                    GameBasicSettingsPane(gameType: gameType, refreshGameState: {}, reLocationGame: {})
+                    GameBasicSettingsPane(gameType: gameType, refreshGameState: refreshGameState, reLocationGame: relocationGame)
                         .navigationTitle(Text("game.settings.tab.baisc"))
                 case .update:
                     GameUpdatePane(gameType: gameType)
