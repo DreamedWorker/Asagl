@@ -25,7 +25,24 @@ struct StartGameButton: View {
                     .foregroundStyle(.white)
                     .padding(.trailing, 16)
                     .onTapGesture {
-                        WindowManager.shared.openNewGameSettingsWindow(gameType: gameType)
+                        WindowManager.shared.openNewGameSettingsWindow(
+                            gameType: gameType,
+                            refresh: {
+                                let gameExec = (gameType == .GenshinCN) ?
+                                AppSettings.getPrefValue(key: AppConfigKey.GENSHIN_EXEC_PATH, defVal: "") :
+                                AppSettings.getPrefValue(key: AppConfigKey.ZENLESS_EXEC_PATH, defVal: "")
+                                if gameExec != "" {
+                                    viewModel.startButtonText = NSLocalizedString("game.start", comment: "")
+                                    viewModel.actionType = .FINE
+                                } else {
+                                    viewModel.startButtonText = NSLocalizedString("game.indicator.setup", comment: "")
+                                    viewModel.actionType = .NEED_SETUP
+                                }
+                            },
+                            relocation: {
+                                chooseDir(type: gameType)
+                            }
+                        )
                     }
             } else {
                 ProgressView(value: viewModel.progress, total: 1.0)

@@ -13,8 +13,12 @@ class WindowManager {
     
     private var windows: [NSWindow] = []
 
-    func openNewGameSettingsWindow(gameType: GameType) {
-        let newView = GameSettingsWindow(gameType: gameType)
+    func openNewGameSettingsWindow(
+        gameType: GameType,
+        refresh: @escaping () -> Void,
+        relocation: @escaping () -> Void
+    ) {
+        let newView = GameSettingsWindow(gameType: gameType, refreshGameState: refresh, relocationGame: relocation)
         let hostingController = NSHostingController(rootView: newView)
         let window = NSWindow(
             contentRect: NSRect(x: 0, y: 0, width: 800, height: 600),
