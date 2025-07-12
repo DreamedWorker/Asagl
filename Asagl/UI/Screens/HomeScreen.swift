@@ -75,7 +75,9 @@ struct HomeScreen: View {
                                 HStack(alignment: .bottom) {
                                     GameNewsPane(gameType: GameType.valueOf(name: selectedGame))
                                     Spacer()
-                                    GameTimer(gameType: GameType.valueOf(name: selectedGame))
+                                    GameTimer(gameType: GameType.valueOf(name: selectedGame)) {
+                                        return GameType.valueOf(name: selectedGame)
+                                    }
                                     StartGameButton(gameType: GameType.valueOf(name: selectedGame))
                                 }
                             }
