@@ -66,7 +66,8 @@ extension WineRunner {
             let duration = endTime.timeIntervalSince(startTime)
             DispatchQueue.main.async {
                 let timerKey = "GameTime\(gameType.rawValue)"
-                AppSettings.setPrefValue(key: timerKey, val: Int(duration))
+                let lastGameTime = AppSettings.getPrefValue(key: timerKey, defVal: 0)
+                AppSettings.setPrefValue(key: timerKey, val: Int(Int(duration) + lastGameTime))
             }
         }
     }
