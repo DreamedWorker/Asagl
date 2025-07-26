@@ -1,0 +1,47 @@
+name: 问题反馈（Bug report）
+description: 告知开发人员应用在使用过程中出现的异常（Inform the developer of the abnormality that occurs during the use of the application.）。
+title: "[BUG]: Fill in a suitable title"
+labels: bug, help wanted, question
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > 请言简意赅地表达你遇到的问题，并如实填写下发的内容，以便于开发者具体定位问题所在。
+        > Please express the problem you have encountered concisely, and fill in the content truthfully so that the developers can specifically locate the problem.
+
+  - type: input
+    id: macosversion
+    attributes:
+      label: macOS 版本 （macOS version）
+      description: |
+        单击屏幕左上角的苹果图标后点按 `关于本机` 后在打开的窗口的 `macOS` 行可以找到(After clicking the Apple icon in the upper left corner of the screen, click "About This Machine" and you can find it in the "macOS" line of the open window.)。
+      placeholder: 如：15.5 (24F74)
+    validations:
+      required: true
+
+  - type: input
+    id: asaglversion
+    attributes:
+      label: Asagl 版本 (Asagl version)
+      description: 单击屏幕左上角的应用标题，在下拉菜单中点按 `关于 Asagl` 中可以看到(Click the application title in the upper left corner of the screen, and click `About Asagl` in the drop-down menu to see)。
+      placeholder: 如：2.0.1 (20120250712)
+    validations:
+      required: true
+
+  - type: textarea
+    id: whathappened
+    attributes:
+      label: 出现的问题 （What happened）
+      description: 详细地表达你在使用应用时遇到的问题，如：你的具体操作流程以及应用对应的反应情况。如果出现崩溃而退出的，操作系统一般会弹出错误日志窗口，在描述完你的情况后请附上该内容(Express in detail the problems you encounter when using the application, such as your specific operation process and the corresponding response of the application. If there is a crash and exit, the operating system will generally pop up an error log window. Please attach it after describing your situation)。
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: 最后确认 （Final confirmation）
+      description: 确认反馈的问题并保证描述系客观（Confirm the report and ensure that the description is objective.）。
+      options:
+        - label: 我确认描述的内容是真实的使用过程中遇到的问题且我已经尽我所能地详尽表达，并同意在开发人员无法复现的时候该问题被直接关闭（I confirm that the content described is the real problem encountered during use and I have tried my best to express it in detail, and agree that the problem will be closed directly when the developer cannot reproduce it.）。
+          required: true
