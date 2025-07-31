@@ -1,0 +1,28 @@
+name: 功能建议（Feature request）
+description: 向开发人员提出软件功能上的改进或创新（Propose improvements or innovations in application features to developers）。
+
+title: "[FEATURE REQUEST]: Fill in a suitable title"
+labels: help wanted
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > 请尽可能详细的表达当前存量功能的优化建议，或者提出软件可以加入的新功能。
+        > Please express the optimization suggestions of the current stock feature(s) in as much detail as possible, or propose new feature(s) that the software can add.
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: 发起建议的目的 （The purpose of launching the request）
+      description: 向我们描述改进或添加新功能的目的（动机、背景），如果有多个建议的，请分别提起工单（Describe to us the purpose of improving or adding new feature(s) (motives, background). If there are multiple requests, please raise the Issues separately）。
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: 对新功能（或改进的功能）的描述 （Description of new feature(s) (or improved feature(s))）
+      description: 详细的描述一下你想要的（或想改进的）功能，描述的越具体（甚至能提供大致的实现方案的），更容易被加入到开发计划中（Describe in detail the feature(s) you want (or want to improve). The more specific the description (or even the general implementation plan can be provided), the easier it is to be added to the development plan）。
+    validations:
+      required: true
