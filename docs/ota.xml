@@ -5,6 +5,23 @@
     <description>Most recent changes with links to updates.</description>
     <language>zh</language>
     <item>
+      <title>Version 2.0.2</title>
+        <sparkle:version>20220250731</sparkle:version>
+        <sparkle:shortVersionString>2.0.2</sparkle:shortVersionString>
+        <link>https://github.com/DreamedWorker/Asagl</link>
+        <sparkle:fullReleaseNotesLink>https://github.com/DreamedWorker/Asagl/compare/v2.0.1...v2.0.2</sparkle:fullReleaseNotesLink>
+        <description>
+          <![CDATA[
+            <h3>新版变化</h3>
+            <ul>
+              <li>【修复】现在执行游戏下载或更新时将不会导致程序崩溃</li>
+            </ul>
+            <i><p>此次更新为必须的重要更新，强烈建议更新。<p></i>
+          ]]>
+        </description>
+        <pubDate>2025年7月31日 周四 21:00</pubDate>
+        <enclosure url="https://github.com/DreamedWorker/Asagl/releases/download/v2.0.2/Asagl-v2.0.2-arm64.zip" length="8503846" type="application/octet-stream" sparkle:edSignature="yAgDaRejG21SG6ZvxE/FC4rFFYgwyZ1xz+y8WpBqSGjAfBvhfAXVp2Of+5tjYzptmas0FOWWsAvhtJQGxb9rBw==" />
+        </item>
         <title>Version 2.0.1</title>
         <sparkle:version>20120250712</sparkle:version>
         <sparkle:shortVersionString>2.0.1</sparkle:shortVersionString>
